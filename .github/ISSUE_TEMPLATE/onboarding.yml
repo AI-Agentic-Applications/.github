@@ -3,19 +3,25 @@ description: Request Contributor guidance, Collaborator access, or Maintainer st
 title: "[Onboarding] Role Request"
 labels: ["onboarding"]
 body:
-  - type: textarea
+  - type: dropdown
     id: role
     attributes:
       label: Desired Role
-      description: Pre-filled from our onboarding portal (Contributor, Collaborator, or Maintainer).
+      options:
+        - Contributor
+        - Collaborator
+        - Maintainer
     validations:
       required: true
 
-  - type: textarea
+  - type: input
     id: repo
     attributes:
       label: Target Repository
-      description: Pre-filled from our onboarding portal.
+      placeholder: core-api
+      options:
+        - octoTriage
+        - ollaVox
     validations:
       required: true
 
