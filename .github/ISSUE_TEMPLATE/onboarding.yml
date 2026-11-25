@@ -18,7 +18,6 @@ body:
     id: repo
     attributes:
       label: Target Repository
-      placeholder: core-api
       options:
         - octoTriage
         - ollaVox
